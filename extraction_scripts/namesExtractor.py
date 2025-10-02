@@ -31,7 +31,7 @@ def insert_into_people():
     composer_set = set()
 
     try:
-        connection = db.create_db_connection(config)
+        connection = db.get_connection(config)
         print("Connection successful!")
 
         cursor = connection.cursor()
@@ -53,7 +53,7 @@ def insert_into_people():
     print(len(composer_set))
 
     try:
-        connection = db.create_db_connection(config)
+        connection = db.get_connection(config)
         print("Connection successful!")
 
         cursor = connection.cursor()

@@ -1,6 +1,6 @@
 import psycopg2
 
-def create_db_connection(config):
+def get_connection(config):
     """
     Creates and returns a database connection using the given configuration.
 
